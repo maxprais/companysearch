@@ -19,11 +19,12 @@ securigo = {};
             data: JSON.stringify({name: name}),
             dataType: 'json',
             success: function (data) {
-                console.log(data);
-                if (data){
+                if (data.length > 0){
+                    console.log('in');
                     securigo.sortDataFromServer(data)
                 }
-                else {
+                else if(data.length === 0) {
+                    console.log('out');
                     securigo.requestCompanyData(name);
                 }
 
@@ -50,6 +51,7 @@ securigo = {};
             jsonp: 'callback',
             success: function (data) {
                 var dat = data['company']['resultList'];
+                console.log(dat);
                 securigo.sortData(dat);
             }
         })
@@ -68,7 +70,7 @@ securigo = {};
             data: JSON.stringify(companyObj),
             dataType: 'json',
             success: function (data) {
-
+                securigo.arrangeCompaniesToDisplay(data);
             }
         })
 

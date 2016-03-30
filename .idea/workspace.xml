@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14d2aee1-00a2-4a0e-8856-b45881b3a777" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.py" afterPath="$PROJECT_DIR$/controller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/autocomplete.js" afterPath="$PROJECT_DIR$/js/autocomplete.js" />
     </list>
@@ -18,7 +17,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/securigointerview$controller.coverage" NAME="controller Coverage Results" MODIFIED="1459326229452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/securigointerview$controller.coverage" NAME="controller Coverage Results" MODIFIED="1459327372451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -52,10 +51,10 @@
       <file leaf-file-name="autocomplete.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/autocomplete.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14718615">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.29462737">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
               <folding>
-                <marker date="1459326226145" expanded="true" signature="3187:3239" placeholder="..." />
+                <marker date="1459327371126" expanded="true" signature="3355:3407" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -65,35 +64,20 @@
         <entry file="file://$PROJECT_DIR$/controller.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+              <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
               <folding>
                 <element signature="e#0#65#0" expanded="true" />
-                <marker date="1459325357480" expanded="true" signature="308:438" placeholder="CREATE TABLE... if" />
-                <marker date="1459325357480" expanded="true" signature="648:706" placeholder="SELECT name companies" />
-                <marker date="1459325357480" expanded="true" signature="648:707" placeholder="SELECT name,... companies" />
-                <marker date="1459325357480" expanded="true" signature="648:710" placeholder="SELECT name,... companies" />
-                <marker date="1459325357480" expanded="true" signature="648:711" placeholder="SELECT name,... companies" />
-                <marker date="1459325357480" expanded="true" signature="1796:1832" placeholder="SELECT * fro... messages" />
-                <marker date="1459325357480" expanded="true" signature="1796:1837" placeholder="SELECT * fro... messages" />
-                <marker date="1459325357480" expanded="true" signature="1796:1840" placeholder="SELECT * fro... messages" />
-                <marker date="1459325357480" expanded="true" signature="1796:1870" placeholder="SELECT * fro... messages" />
-                <marker date="1459325357480" expanded="true" signature="1842:1870" placeholder="( company_ob... " />
-                <marker date="1459325357480" expanded="true" signature="1961:2020" placeholder="INSERT INTO companies... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../dapulse/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1458733367153" expanded="true" signature="299:400" placeholder="CREATE TABLE... if" />
-                <marker date="1458733367153" expanded="true" signature="578:615" placeholder="SELECT usern... message" />
-                <marker date="1458733367153" expanded="true" signature="1063:1130" placeholder="INSERT INTO message... " />
-                <marker date="1458733367153" expanded="true" signature="1238:1277" placeholder="SELECT id fr... message" />
+                <marker date="1459327273488" expanded="true" signature="308:438" placeholder="CREATE TABLE... if" />
+                <marker date="1459327273488" expanded="true" signature="648:706" placeholder="SELECT name companies" />
+                <marker date="1459327273488" expanded="true" signature="648:707" placeholder="SELECT name,... companies" />
+                <marker date="1459327273488" expanded="true" signature="648:710" placeholder="SELECT name,... companies" />
+                <marker date="1459327273488" expanded="true" signature="648:711" placeholder="SELECT name,... companies" />
+                <marker date="1459327273488" expanded="true" signature="1718:1754" placeholder="SELECT * fro... messages" />
+                <marker date="1459327273488" expanded="true" signature="1718:1759" placeholder="SELECT * fro... messages" />
+                <marker date="1459327273488" expanded="true" signature="1718:1762" placeholder="SELECT * fro... messages" />
+                <marker date="1459327273488" expanded="true" signature="1718:1792" placeholder="SELECT * fro... messages" />
+                <marker date="1459327273488" expanded="true" signature="1764:1792" placeholder="( company_ob... " />
+                <marker date="1459327273488" expanded="true" signature="1883:1942" placeholder="INSERT INTO companies... " />
               </folding>
             </state>
           </provider>
@@ -466,11 +450,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.181388" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1577287" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57886434" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61198735" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -486,7 +470,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -690,9 +674,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/bottle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33054394">
+          <caret line="1731" column="0" selection-start-line="1731" selection-start-column="0" selection-end-line="1731" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../dapulse/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-1.2623762">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1458733367153" expanded="true" signature="299:400" placeholder="CREATE TABLE... if" />
@@ -706,30 +698,30 @@
     <entry file="file://$PROJECT_DIR$/controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
           <folding>
             <element signature="e#0#65#0" expanded="true" />
-            <marker date="1459325357480" expanded="true" signature="308:438" placeholder="CREATE TABLE... if" />
-            <marker date="1459325357480" expanded="true" signature="648:706" placeholder="SELECT name companies" />
-            <marker date="1459325357480" expanded="true" signature="648:707" placeholder="SELECT name,... companies" />
-            <marker date="1459325357480" expanded="true" signature="648:710" placeholder="SELECT name,... companies" />
-            <marker date="1459325357480" expanded="true" signature="648:711" placeholder="SELECT name,... companies" />
-            <marker date="1459325357480" expanded="true" signature="1796:1832" placeholder="SELECT * fro... messages" />
-            <marker date="1459325357480" expanded="true" signature="1796:1837" placeholder="SELECT * fro... messages" />
-            <marker date="1459325357480" expanded="true" signature="1796:1840" placeholder="SELECT * fro... messages" />
-            <marker date="1459325357480" expanded="true" signature="1796:1870" placeholder="SELECT * fro... messages" />
-            <marker date="1459325357480" expanded="true" signature="1842:1870" placeholder="( company_ob... " />
-            <marker date="1459325357480" expanded="true" signature="1961:2020" placeholder="INSERT INTO companies... " />
+            <marker date="1459327273488" expanded="true" signature="308:438" placeholder="CREATE TABLE... if" />
+            <marker date="1459327273488" expanded="true" signature="648:706" placeholder="SELECT name companies" />
+            <marker date="1459327273488" expanded="true" signature="648:707" placeholder="SELECT name,... companies" />
+            <marker date="1459327273488" expanded="true" signature="648:710" placeholder="SELECT name,... companies" />
+            <marker date="1459327273488" expanded="true" signature="648:711" placeholder="SELECT name,... companies" />
+            <marker date="1459327273488" expanded="true" signature="1718:1754" placeholder="SELECT * fro... messages" />
+            <marker date="1459327273488" expanded="true" signature="1718:1759" placeholder="SELECT * fro... messages" />
+            <marker date="1459327273488" expanded="true" signature="1718:1762" placeholder="SELECT * fro... messages" />
+            <marker date="1459327273488" expanded="true" signature="1718:1792" placeholder="SELECT * fro... messages" />
+            <marker date="1459327273488" expanded="true" signature="1764:1792" placeholder="( company_ob... " />
+            <marker date="1459327273488" expanded="true" signature="1883:1942" placeholder="INSERT INTO companies... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/autocomplete.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14718615">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.29462737">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
-            <marker date="1459326226145" expanded="true" signature="3187:3239" placeholder="..." />
+            <marker date="1459327371126" expanded="true" signature="3355:3407" placeholder="..." />
           </folding>
         </state>
       </provider>

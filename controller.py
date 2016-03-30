@@ -41,18 +41,12 @@ def get_data():
         print list_to_return
     return json.dumps(list_to_return, encoding="utf-8")
 
-#
-# class Company:
-#     def __init__(self, name, image, url):
-#         self.name = name
-#         self.imageUrl = image
-#         self.url = url
-
 
 @post('/save')
 def post_data():
     data_arr = request.json.get('companies')
     company_obj = {}
+    list_to_return = []
     for i in range(len(data_arr)):
         company_obj['displayName'] = data_arr[i]['name']
         company_obj['id'] = data_arr[i]['id']
@@ -60,7 +54,8 @@ def post_data():
         company_obj['subline'] = data_arr[i]['subLine']
         company_obj['url'] = data_arr[i]['url']
         save_data(company_obj)
-    return json.dumps(company_obj)
+        list_to_return.append(company_obj)
+    return json.dumps(list_to_return)
 
 
 def save_data(company_obj):
@@ -72,9 +67,6 @@ def save_data(company_obj):
                                                                                        company_obj['image_url'], company_obj['subline'], company_obj['url'] )
         cur.execute(insert_qry)
         db.commit()
-
-
-
 
 
 @get('/js/<filename:re:.*\.js>')

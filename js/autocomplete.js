@@ -5,25 +5,40 @@ securigo = {};
     securigo.getCompanyName = (function () {
         setInterval(function () {
             var name = $('.company-input').val();
-            securigo.getCompanyDataOnLoad(name);
-            //securigo.requestCompanyData(name);
+            securigo.getCompanyDataFromServer(name);
         }, 1000)
 
     })();
 
-    securigo.getCompanyDataOnLoad = function (name) {
+    securigo.getCompanyDataFromServer = function (name) {
 
         $.ajax({
             url: 'get_data',
             type: 'post',
-            contentType: 'application/json',
+            contentType: 'application/json; charset=UTF-8',
             data: JSON.stringify({name: name}),
             dataType: 'json',
             success: function (data) {
-                console.log(data)
+                console.log(data);
+                if (data){
+                    securigo.sortDataFromServer(data)
+                }
+                else {
+                    securigo.requestCompanyData(name);
+                }
+
             }
         })
 
+    };
+
+    securigo.sortDataFromServer = function (data) {
+        var companyList = [];
+        $.each(data, function (i, v){
+            var company = new CompanyToDisplay(v[0], v[1], v[2]);
+            companyList.push(company);
+        });
+        securigo.createAutocomplete(companyList);
     };
 
     securigo.requestCompanyData = function (name) {
@@ -35,7 +50,6 @@ securigo = {};
             jsonp: 'callback',
             success: function (data) {
                 var dat = data['company']['resultList'];
-
                 securigo.sortData(dat);
             }
         })

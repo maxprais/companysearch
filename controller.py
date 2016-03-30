@@ -1,6 +1,7 @@
 from bottle import get, post, template, run, static_file, request
 import json
 import MySQLdb
+import codecs
 
 db = MySQLdb.connect (host="localhost", user="root", passwd="", db="mysql")
 
@@ -25,20 +26,27 @@ def index():
 def get_data():
 
     check_name = request.json.get('name')
-    print check_name
 
-    table_qry = "SELECT name, image_url, url from companies where name like '%s';" % check_name + '%'
+    table_qry = "SELECT name, image_url, url from companies where name like '%s';" % (check_name + '%')
     cur.execute(table_qry)
     res = cur.fetchall()
-    print res
-    return json.dumps(res)
+    list_to_return = []
+    stmt = [a[0] + ', ' + a[1] + ', ' + a[2] for a in res]
+    for a in stmt:
+        result = a
+        string = str(result)
+        u = unicode(string, "utf-8", errors='ignore')
+        r = u.split(',')
+        list_to_return.append(r)
+        print list_to_return
+    return json.dumps(list_to_return, encoding="utf-8")
 
-
-class Company:
-    def __init__(self, name, image, url):
-        self.name = name
-        self.imageUrl = image
-        self.url = url
+#
+# class Company:
+#     def __init__(self, name, image, url):
+#         self.name = name
+#         self.imageUrl = image
+#         self.url = url
 
 
 @post('/save')

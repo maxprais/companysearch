@@ -1,15 +1,18 @@
 from bottle import get, post, template, run, static_file, request
 import json
-import MySQLdb
-import codecs
 
-db = MySQLdb.connect (host="localhost", user="root", passwd="", db="mysql")
+import codecs
+import sqlite3
+
+db = sqlite3.connect('linkedin')
+
+# db = MySQLdb.connect(host="localhost", user="root", passwd="root", db="mysql")
 
 cur = db.cursor()
 
-cur.execute('create database if not exists linkedin')
-
-cur.execute('use linkedin')
+# cur.execute('create database if not exists linkedin')
+#
+# cur.execute('use linkedin')
 
 create_table_qry = 'CREATE TABLE if not EXISTS companies (name VARCHAR (255), id INT, image_url VARCHAR (255), subline VARCHAR(255), url VARCHAR(255));'
 cur.execute(create_table_qry)
